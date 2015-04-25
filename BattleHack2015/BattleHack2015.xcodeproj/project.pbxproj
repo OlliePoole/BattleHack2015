@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BBBC9821AEB96DB002BFA34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9811AEB96DB002BFA34 /* main.m */; };
+		6BBBC9851AEB96DB002BFA34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */; };
+		6BBBC9881AEB96DB002BFA34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9871AEB96DB002BFA34 /* ViewController.m */; };
+		6BBBC98B1AEB96DB002BFA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC9891AEB96DB002BFA34 /* Main.storyboard */; };
+		6BBBC98D1AEB96DB002BFA34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */; };
+		6BBBC9901AEB96DB002BFA34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC98E1AEB96DB002BFA34 /* LaunchScreen.xib */; };
+		6BBBC99C1AEB96DB002BFA34 /* BattleHack2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC99B1AEB96DB002BFA34 /* BattleHack2015Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BBBC9961AEB96DB002BFA34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BBBC9741AEB96DA002BFA34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BBBC97B1AEB96DB002BFA34;
+			remoteInfo = BattleHack2015;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BBBC97C1AEB96DB002BFA34 /* BattleHack2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleHack2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBBC9801AEB96DB002BFA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BBBC9811AEB96DB002BFA34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BBBC9831AEB96DB002BFA34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BBBC9861AEB96DB002BFA34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6BBBC9871AEB96DB002BFA34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BBBC98A1AEB96DB002BFA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6BBBC98F1AEB96DB002BFA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6BBBC9951AEB96DB002BFA34 /* BattleHack2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleHack2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBBC99A1AEB96DB002BFA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BBBC99B1AEB96DB002BFA34 /* BattleHack2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BattleHack2015Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BBBC9791AEB96DB002BFA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBBC9921AEB96DB002BFA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BBBC9731AEB96DA002BFA34 = {
+			isa = PBXGroup;
+			children = (
+				6BBBC97E1AEB96DB002BFA34 /* BattleHack2015 */,
+				6BBBC9981AEB96DB002BFA34 /* BattleHack2015Tests */,
+				6BBBC97D1AEB96DB002BFA34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BBBC97D1AEB96DB002BFA34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BBBC97C1AEB96DB002BFA34 /* BattleHack2015.app */,
+				6BBBC9951AEB96DB002BFA34 /* BattleHack2015Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BBBC97E1AEB96DB002BFA34 /* BattleHack2015 */ = {
+			isa = PBXGroup;
+			children = (
+				6BBBC9831AEB96DB002BFA34 /* AppDelegate.h */,
+				6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */,
+				6BBBC9861AEB96DB002BFA34 /* ViewController.h */,
+				6BBBC9871AEB96DB002BFA34 /* ViewController.m */,
+				6BBBC9891AEB96DB002BFA34 /* Main.storyboard */,
+				6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */,
+				6BBBC98E1AEB96DB002BFA34 /* LaunchScreen.xib */,
+				6BBBC97F1AEB96DB002BFA34 /* Supporting Files */,
+			);
+			path = BattleHack2015;
+			sourceTree = "<group>";
+		};
+		6BBBC97F1AEB96DB002BFA34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBBC9801AEB96DB002BFA34 /* Info.plist */,
+				6BBBC9811AEB96DB002BFA34 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BBBC9981AEB96DB002BFA34 /* BattleHack2015Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6BBBC99B1AEB96DB002BFA34 /* BattleHack2015Tests.m */,
+				6BBBC9991AEB96DB002BFA34 /* Supporting Files */,
+			);
+			path = BattleHack2015Tests;
+			sourceTree = "<group>";
+		};
+		6BBBC9991AEB96DB002BFA34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BBBC99A1AEB96DB002BFA34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BBBC97B1AEB96DB002BFA34 /* BattleHack2015 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BBBC99F1AEB96DB002BFA34 /* Build configuration list for PBXNativeTarget "BattleHack2015" */;
+			buildPhases = (
+				6BBBC9781AEB96DB002BFA34 /* Sources */,
+				6BBBC9791AEB96DB002BFA34 /* Frameworks */,
+				6BBBC97A1AEB96DB002BFA34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BattleHack2015;
+			productName = BattleHack2015;
+			productReference = 6BBBC97C1AEB96DB002BFA34 /* BattleHack2015.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BBBC9941AEB96DB002BFA34 /* BattleHack2015Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BBBC9A21AEB96DB002BFA34 /* Build configuration list for PBXNativeTarget "BattleHack2015Tests" */;
+			buildPhases = (
+				6BBBC9911AEB96DB002BFA34 /* Sources */,
+				6BBBC9921AEB96DB002BFA34 /* Frameworks */,
+				6BBBC9931AEB96DB002BFA34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BBBC9971AEB96DB002BFA34 /* PBXTargetDependency */,
+			);
+			name = BattleHack2015Tests;
+			productName = BattleHack2015Tests;
+			productReference = 6BBBC9951AEB96DB002BFA34 /* BattleHack2015Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BBBC9741AEB96DA002BFA34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Team George & Ollie";
+				TargetAttributes = {
+					6BBBC97B1AEB96DB002BFA34 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					6BBBC9941AEB96DB002BFA34 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 6BBBC97B1AEB96DB002BFA34;
+					};
+				};
+			};
+			buildConfigurationList = 6BBBC9771AEB96DA002BFA34 /* Build configuration list for PBXProject "BattleHack2015" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BBBC9731AEB96DA002BFA34;
+			productRefGroup = 6BBBC97D1AEB96DB002BFA34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BBBC97B1AEB96DB002BFA34 /* BattleHack2015 */,
+				6BBBC9941AEB96DB002BFA34 /* BattleHack2015Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BBBC97A1AEB96DB002BFA34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBBC98B1AEB96DB002BFA34 /* Main.storyboard in Resources */,
+				6BBBC9901AEB96DB002BFA34 /* LaunchScreen.xib in Resources */,
+				6BBBC98D1AEB96DB002BFA34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBBC9931AEB96DB002BFA34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BBBC9781AEB96DB002BFA34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBBC9881AEB96DB002BFA34 /* ViewController.m in Sources */,
+				6BBBC9851AEB96DB002BFA34 /* AppDelegate.m in Sources */,
+				6BBBC9821AEB96DB002BFA34 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BBBC9911AEB96DB002BFA34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBBC99C1AEB96DB002BFA34 /* BattleHack2015Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BBBC9971AEB96DB002BFA34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BBBC97B1AEB96DB002BFA34 /* BattleHack2015 */;
+			targetProxy = 6BBBC9961AEB96DB002BFA34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BBBC9891AEB96DB002BFA34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BBBC98A1AEB96DB002BFA34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BBBC98E1AEB96DB002BFA34 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BBBC98F1AEB96DB002BFA34 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BBBC99D1AEB96DB002BFA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6BBBC99E1AEB96DB002BFA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BBBC9A01AEB96DB002BFA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BattleHack2015/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BBBC9A11AEB96DB002BFA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BattleHack2015/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BBBC9A31AEB96DB002BFA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BattleHack2015Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleHack2015.app/BattleHack2015";
+			};
+			name = Debug;
+		};
+		6BBBC9A41AEB96DB002BFA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BattleHack2015Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleHack2015.app/BattleHack2015";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BBBC9771AEB96DA002BFA34 /* Build configuration list for PBXProject "BattleHack2015" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBBC99D1AEB96DB002BFA34 /* Debug */,
+				6BBBC99E1AEB96DB002BFA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BBBC99F1AEB96DB002BFA34 /* Build configuration list for PBXNativeTarget "BattleHack2015" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBBC9A01AEB96DB002BFA34 /* Debug */,
+				6BBBC9A11AEB96DB002BFA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BBBC9A21AEB96DB002BFA34 /* Build configuration list for PBXNativeTarget "BattleHack2015Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBBC9A31AEB96DB002BFA34 /* Debug */,
+				6BBBC9A41AEB96DB002BFA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BBBC9741AEB96DA002BFA34 /* Project object */;
+}
