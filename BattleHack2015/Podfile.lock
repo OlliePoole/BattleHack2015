@@ -1,0 +1,53 @@
+PODS:
+  - Braintree (3.8.0-rc2):
+    - Braintree/API
+    - Braintree/Coinbase
+    - Braintree/Drop-In
+    - Braintree/Payments
+    - Braintree/PayPal
+    - Braintree/UI
+    - Braintree/Venmo
+  - Braintree/API (3.8.0-rc2)
+  - Braintree/Apple-Pay (3.8.0-rc2):
+    - Braintree/Payments
+  - Braintree/Coinbase (3.8.0-rc2):
+    - Braintree/API
+    - coinbase-official/OAuth (~> 2.1.1)
+  - Braintree/Drop-In (3.8.0-rc2):
+    - Braintree/API
+    - Braintree/Coinbase
+    - Braintree/Payments
+    - Braintree/PayPal
+    - Braintree/UI
+    - Braintree/Venmo
+  - Braintree/Payments (3.8.0-rc2):
+    - Braintree/API
+    - Braintree/Coinbase
+    - Braintree/PayPal
+    - Braintree/Venmo
+  - Braintree/PayPal (3.8.0-rc2):
+    - Braintree/API
+    - Braintree/UI
+  - Braintree/UI (3.8.0-rc2):
+    - Braintree/API
+  - Braintree/Venmo (3.8.0-rc2):
+    - Braintree/API
+  - coinbase-official/OAuth (2.1.2)
+  - EstimoteSDK (3.2.0)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.2)
+
+DEPENDENCIES:
+  - Braintree
+  - Braintree/Apple-Pay
+  - EstimoteSDK
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  Braintree: 107d22885e12c023b58809654447f4515ac68a75
+  coinbase-official: 36eb1ed3f43e8a5597ce89eac1e53f1a6d5a1af0
+  EstimoteSDK: 3bd1c7c1386016171a726ad26b9d699724613c4a
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+
+COCOAPODS: 0.34.4
