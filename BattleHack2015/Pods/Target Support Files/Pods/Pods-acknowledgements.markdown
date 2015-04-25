@@ -24,6 +24,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## EstimoteSDK
+
+Copyright 2014 Estimote, Inc. All rights reserved.
+
+
 ## coinbase-official
 
 Copyright (c) 2014 Coinbase

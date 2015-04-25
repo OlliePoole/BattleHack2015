@@ -25,6 +25,15 @@
                                     <action selector="pay:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lZd-TU-zhG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvP-qv-oEn">
+                                <rect key="frame" x="194" y="345" width="122" height="30"/>
+                                <state key="normal" title="Beacons">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beacons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f2v-1g-iQU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -32,7 +41,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215.46666666666667" y="337.95999999999998"/>
+            <point key="canvasLocation" x="214.5" y="337.5"/>
+        </scene>
+        <!--Beacons View Controller-->
+        <scene sceneID="EjY-sp-tXY">
+            <objects>
+                <viewController storyboardIdentifier="BeaconsViewController" id="3hT-DM-94n" customClass="BeaconsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6tM-1P-Ygi"/>
+                        <viewControllerLayoutGuide type="bottom" id="4TK-09-dVa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XRm-5d-MmX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69W-pe-qAw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657.5" y="337.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

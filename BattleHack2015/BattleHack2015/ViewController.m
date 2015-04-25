@@ -61,6 +61,12 @@
     
 }
 
+- (IBAction)beacons:(id)sender
+{
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"BeaconsViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 - (IBAction)pay:(id)sender
 {
     [Braintree setupWithClientToken:self.clientToken completion:^(Braintree *braintree, NSError *error) {

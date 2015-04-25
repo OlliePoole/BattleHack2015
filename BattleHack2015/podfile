@@ -1,2 +1,3 @@
 pod 'Braintree'
 pod 'Braintree/Apple-Pay'
+pod 'EstimoteSDK'

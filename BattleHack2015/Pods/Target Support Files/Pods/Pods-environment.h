@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_Braintree_Venmo 8
 #define COCOAPODS_VERSION_PATCH_Braintree_Venmo 0
 
+// EstimoteSDK
+#define COCOAPODS_POD_AVAILABLE_EstimoteSDK
+#define COCOAPODS_VERSION_MAJOR_EstimoteSDK 3
+#define COCOAPODS_VERSION_MINOR_EstimoteSDK 2
+#define COCOAPODS_VERSION_PATCH_EstimoteSDK 0
+
 // coinbase-official/OAuth
 #define COCOAPODS_POD_AVAILABLE_coinbase_official_OAuth
 #define COCOAPODS_VERSION_MAJOR_coinbase_official_OAuth 2
