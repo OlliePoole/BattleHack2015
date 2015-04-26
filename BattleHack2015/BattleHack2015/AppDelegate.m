@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "EstimoteSDK.h"
+#include <stdlib.h>
 
 @interface AppDelegate () <ESTBeaconManagerDelegate>
 
@@ -32,18 +33,91 @@
         
     }
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://vast-crag-4177.herokuapp.com/insert"]];
-    [request setHTTPMethod:@"POST"];
+    NSArray *epochs = @[@"1459357692",
+                        @"1410068506",
+                        @"1441366191",
+                        @"1459210602",
+                        @"1419672200",
+                        @"1423887970",
+                        @"1398254102",
+                        @"1445668844",
+                        @"1408527606",
+                        @"1450957512",
+                        @"1401027672",
+                        @"1407936503",
+                        @"1451783305",
+                        @"1459763935",
+                        @"1436451776",
+                        @"1420812179",
+                        @"1436141944",
+                        @"1421984572",
+                        @"1424610774",
+                        @"1456838851",
+                        @"1407984125",
+                        @"1450265923",
+                        @"1413696596",
+                        @"1429374323",
+                        @"1418673733",
+                        @"1408315867",
+                        @"1446225259",
+                        @"1441490114",
+                        @"1440656089",
+                        @"1416994987",
+                        @"1398571757",
+                        @"1429839308",
+                        @"1450902955",
+                        @"1407702951",
+                        @"1414000476",
+                        @"1430578803",
+                        @"1458622637",
+                        @"1405249875",
+                        @"1439636011",
+                        @"1443867978",
+                        @"1456474581",
+                        @"1407108627",
+                        @"1438797642",
+                        @"1446855826",
+                        @"1436579210",
+                        @"1458535080",
+                        @"1402490296",
+                        @"1408288764",
+                        @"1419192511",
+                        @"1425274885",
+                        @"1438707641",
+                        @"1459169356"];
     
-    NSString *payload = @"{\"id\" : \"1\", \"lat\" : \"51.5114602\", \"long\" : \"-0.0822526\", \"time\" : \"1430031000\", \"bucket\" : \"002\", \"amount\" : \"3.00\"}";
+    NSArray *lats = @[@"51.51368",
+                      @"51.510822",
+                      @"51.517099",
+                      @"51.513576",
+                      @"51.507987",
+                      @"51.313062"];
     
-  //  NSString *body = [NSString stringWithFormat:@"id=%@&lat=%@&long=]
+    NSArray *longs = @[@"-0.089017",
+                       @"-0.224487",
+                       @"-0.0853041",
+                       @"-0.097925",
+                       @"-0.096938",
+                       @"-0.113246"];
     
-    [request setHTTPBody:[payload dataUsingEncoding:NSUTF8StringEncoding]];
-
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+    int r = arc4random_uniform(6);
+    
+    for (NSUInteger x = 0; x < epochs.count; x++) {
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://vast-crag-4177.herokuapp.com/insert"]];
+        [request setHTTPMethod:@"POST"];
         
-    }];
+        NSString *body = [NSString stringWithFormat:@"id=%lu&lat=%@&long=-%@&time=%@&bucket=0%lu&amount=%d", x + 5, lats[r], longs[r], epochs[x], (unsigned long)x, r];
+        
+        [request setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        NSURLResponse *response;
+        NSError *error;
+        
+        [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    }
+    
+    
+    
     
     self.beaconManager = [[ESTBeaconManager alloc] init];
     [self.beaconManager requestAlwaysAuthorization];

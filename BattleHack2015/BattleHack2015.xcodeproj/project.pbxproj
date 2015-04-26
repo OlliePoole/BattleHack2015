@@ -11,7 +11,6 @@
 		6B596C411AECBECF00397AF8 /* PaymentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B596C401AECBECF00397AF8 /* PaymentHandler.m */; };
 		6BBBC9821AEB96DB002BFA34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9811AEB96DB002BFA34 /* main.m */; };
 		6BBBC9851AEB96DB002BFA34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */; };
-		6BBBC9881AEB96DB002BFA34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9871AEB96DB002BFA34 /* ViewController.m */; };
 		6BBBC98B1AEB96DB002BFA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC9891AEB96DB002BFA34 /* Main.storyboard */; };
 		6BBBC98D1AEB96DB002BFA34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */; };
 		6BBBC9901AEB96DB002BFA34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC98E1AEB96DB002BFA34 /* LaunchScreen.xib */; };
@@ -50,8 +49,6 @@
 		6BBBC9811AEB96DB002BFA34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BBBC9831AEB96DB002BFA34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BBBC9861AEB96DB002BFA34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6BBBC9871AEB96DB002BFA34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6BBBC98A1AEB96DB002BFA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BBBC98F1AEB96DB002BFA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -128,8 +125,6 @@
 				A94A33D51AEBE35B00B458FF /* BattleHack2015.entitlements */,
 				6BBBC9831AEB96DB002BFA34 /* AppDelegate.h */,
 				6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */,
-				6BBBC9861AEB96DB002BFA34 /* ViewController.h */,
-				6BBBC9871AEB96DB002BFA34 /* ViewController.m */,
 				6BBBC9891AEB96DB002BFA34 /* Main.storyboard */,
 				6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */,
 				6BBBC98E1AEB96DB002BFA34 /* LaunchScreen.xib */,
@@ -348,7 +343,6 @@
 				A965E36F1AEC3ED00087CB55 /* JustGivingNetworkInterface.m in Sources */,
 				A91CC8811AEC5F9900AFC0BB /* Donation.m in Sources */,
 				A94A33D81AEC192700B458FF /* BeaconsViewController.m in Sources */,
-				6BBBC9881AEB96DB002BFA34 /* ViewController.m in Sources */,
 				A965E3751AEC42F60087CB55 /* Charity.m in Sources */,
 				6BBBC9851AEB96DB002BFA34 /* AppDelegate.m in Sources */,
 				A91CC8841AEC5FAC00AFC0BB /* DonationTableViewCell.m in Sources */,
