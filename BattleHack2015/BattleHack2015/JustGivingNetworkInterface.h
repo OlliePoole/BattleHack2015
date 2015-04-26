@@ -27,4 +27,7 @@
 
 + (void)getDonationsForCharityWithId:(NSString *)charityID withSuccessBlock:(void (^)(NSArray *donations))success withFailureBlock:(void (^)(NSError *error))failure;
 
+
++ (void)getSuggestedCharitiesWithGroupCategory:(NSString *)groupCategory withSucessBlock:(void (^)(NSArray *charities))success withFailureBlock:(void (^)(NSError *error))failure;
+
 @end

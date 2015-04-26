@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15657AD7832A3F40BA94C387 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0E04621E07672CE09AE4A /* libPods.a */; };
+		6B596C411AECBECF00397AF8 /* PaymentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B596C401AECBECF00397AF8 /* PaymentHandler.m */; };
 		6BBBC9821AEB96DB002BFA34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9811AEB96DB002BFA34 /* main.m */; };
 		6BBBC9851AEB96DB002BFA34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9841AEB96DB002BFA34 /* AppDelegate.m */; };
 		6BBBC9881AEB96DB002BFA34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC9871AEB96DB002BFA34 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 		07C0E04621E07672CE09AE4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		29ADBA8D8FAF9B5957502C75 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		440E1705FBFB7898D4B92BFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6B596C3F1AECBECF00397AF8 /* PaymentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentHandler.h; sourceTree = "<group>"; };
+		6B596C401AECBECF00397AF8 /* PaymentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentHandler.m; sourceTree = "<group>"; };
 		6BBBC97C1AEB96DB002BFA34 /* BattleHack2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleHack2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBBC9801AEB96DB002BFA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BBBC9811AEB96DB002BFA34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				A91CC8831AEC5FAC00AFC0BB /* DonationTableViewCell.m */,
 				A91CC8851AEC90D800AFC0BB /* UIImageEffects.h */,
 				A91CC8861AEC90D800AFC0BB /* UIImageEffects.m */,
+				6B596C3F1AECBECF00397AF8 /* PaymentHandler.h */,
+				6B596C401AECBECF00397AF8 /* PaymentHandler.m */,
 			);
 			path = BattleHack2015;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				A91CC8841AEC5FAC00AFC0BB /* DonationTableViewCell.m in Sources */,
 				A94A33E11AEC2F6600B458FF /* JustGivingViewController.m in Sources */,
 				A91CC8871AEC90D800AFC0BB /* UIImageEffects.m in Sources */,
+				6B596C411AECBECF00397AF8 /* PaymentHandler.m in Sources */,
 				6BBBC9821AEB96DB002BFA34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

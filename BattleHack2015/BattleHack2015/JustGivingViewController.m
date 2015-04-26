@@ -13,11 +13,13 @@
 #import "Donation.h"
 #import "UIImageEffects.h"
 #import <QuartzCore/QuartzCore.h>
+#import "PaymentHandler.h"
+#import <Braintree/Braintree.h>
 
 NSString *PRINCES_TRUST_ID = @"130521";
 NSString *HELP_FOR_HEROS_ID = @"183396";
 
-@interface JustGivingViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface JustGivingViewController () <UITableViewDataSource, UITableViewDelegate, PaymentHandlerDelegate>
 
 @property (strong, nonatomic) NSArray *donations;
 
@@ -217,6 +219,30 @@ NSString *HELP_FOR_HEROS_ID = @"183396";
                             } completion:nil];
       //  }];
     }
+}
+
+#pragma mark - Button Interactions
+
+- (IBAction)donateButtonSelected:(id)sender
+{
+    [PaymentHandler sharedInstance].delegate = self;
+    [[PaymentHandler sharedInstance] fetchClientTokenWithResponse:^(BOOL success) {
+        if (success) {
+            [self presentViewController:[[PaymentHandler sharedInstance] dropInViewController] animated:YES completion:NULL];
+        }
+    }];
+}
+
+#pragma mark - PaymentHandler
+
+- (void)paymentProcessComplete
+{
+    [self dismissViewControllerAnimated:[[PaymentHandler sharedInstance] dropInViewController] completion:^{
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ThanksViewController"];
+        
+        //[navVC pushViewController:viewController animated:YES];
+        [self presentViewController:viewController animated:YES completion:NULL];
+    }];
 }
 
 

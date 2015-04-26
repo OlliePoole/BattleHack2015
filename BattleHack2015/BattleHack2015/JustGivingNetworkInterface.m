@@ -117,4 +117,40 @@ NSString *baseURL = @"https://api.justgiving.com/c314e457/v1/";
     }];
 }
 
++ (void)getSuggestedCharitiesWithGroupCategory:(NSString *)groupCategory withSucessBlock:(void (^)(NSArray *))success withFailureBlock:(void (^)(NSError *))failure
+{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@charity/search?q=%@", baseURL, groupCategory]]];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (success) {
+            NSError *error;
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            NSArray *jsonCharities = json[@"charitySearchResults"];
+            
+            NSMutableArray *parsedCharities = [[NSMutableArray alloc] init];
+            
+            for (NSDictionary *charityData in jsonCharities) {
+                NSString *charityID = charityData[@"charityId"];
+                NSString *charityName = charityData[@"name"];
+                NSString *shortDescription = [NSString stringWithFormat:@"We %@ to %@", charityData[@"impactStatementWhat"], charityData[@"impactStatementWhy"]];
+                NSString *longDescription = charityData[@"description"];
+                NSString *logoURL = charityData[@"logoAbsoluteUrl"];
+                NSString *category = charityData[@"categories"][0];
+                [[NSUserDefaults standardUserDefaults] setObject:category forKey:@"Category"];
+                
+                Charity *charity = [[Charity alloc] initWithCharityID:charityID name:charityName shortDescription:shortDescription longDescription:longDescription logoURL:logoURL];
+                
+                [parsedCharities addObject:charity];
+                
+                if ([charityData isEqual:[jsonCharities lastObject]]) {
+                    success(parsedCharities);
+                }
+            }
+        } else {
+            failure(nil);
+        }
+        
+    }];
+}
+
 @end
