@@ -86,10 +86,10 @@
 {
     BTDropInViewController *dropInViewController = [self.braintree dropInViewControllerWithDelegate:self];
     
-    [dropInViewController setSummaryTitle:[NSString stringWithFormat:@"Donation to %@", self.charityName]];
-    [dropInViewController setDisplayAmount:[NSString stringWithFormat:@"%f", self.paymentAmount]];
+    [dropInViewController setSummaryTitle:@"Donation to Prince's Trust"];
+    [dropInViewController setSummaryDescription:@"Thank you for making a donation!"];
+    [dropInViewController setDisplayAmount:@"$5.00"];
     [dropInViewController setCallToActionText:@"Donate"];
-    [dropInViewController setDelegate:self];
     
     dropInViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:nil];
     

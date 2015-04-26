@@ -225,8 +225,23 @@ NSString *HELP_FOR_HEROS_ID = @"183396";
 
 - (IBAction)donateButtonSelected:(id)sender
 {
+    UIImageView *coinImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"coin"]];
+    coinImageView.frame = CGRectMake(158, 291, 58, 58);
+    
+    [self.view addSubview:coinImageView];
+    
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 /* full rotation*/ * 2 * 2 ];
+    rotationAnimation.duration = 2;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = 100;
+    
+    [coinImageView.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    
     [PaymentHandler sharedInstance].delegate = self;
     [[PaymentHandler sharedInstance] fetchClientTokenWithResponse:^(BOOL success) {
+        coinImageView.alpha = 0;
         if (success) {
             [self presentViewController:[[PaymentHandler sharedInstance] dropInViewController] animated:YES completion:NULL];
         }

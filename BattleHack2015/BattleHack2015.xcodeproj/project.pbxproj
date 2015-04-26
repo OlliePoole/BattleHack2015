@@ -252,10 +252,10 @@
 				TargetAttributes = {
 					6BBBC97B1AEB96DB002BFA34 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = JKJVZA6T7C;
+						DevelopmentTeam = YT2Y5MZ29S;
 						SystemCapabilities = {
 							com.apple.OMC = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Passbook = {
 								enabled = 0;

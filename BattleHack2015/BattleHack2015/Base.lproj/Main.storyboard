@@ -167,7 +167,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0K-ft-68A">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="coin-pound-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Azt-ij-j4x">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="Azt-ij-j4x">
                                         <rect key="frame" x="158" y="291" width="58" height="50"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8L-CB-X96">
@@ -349,7 +349,7 @@
         <image name="Twitter_logo_blue" width="569" height="463"/>
         <image name="btn_g_red_normal.png-34" width="53" height="54"/>
         <image name="bucket2" width="256" height="256"/>
-        <image name="coin-pound-icon" width="256" height="256"/>
+        <image name="coin" width="256" height="256"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

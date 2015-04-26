@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "EstimoteSDK.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <ESTBeaconManagerDelegate>
+
+@property (nonatomic, strong) CLBeacon *beacon;
+@property (nonatomic, strong) ESTBeaconManager *beaconManager;
+@property (nonatomic, strong) CLBeaconRegion *beaconRegion;
+@property (nonatomic) BOOL sentNotification;
 
 @end
 
@@ -26,7 +32,65 @@
         
     }
     
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://vast-crag-4177.herokuapp.com/insert"]];
+    [request setHTTPMethod:@"POST"];
+    
+    NSString *payload = @"{\"id\" : \"1\", \"lat\" : \"51.5114602\", \"long\" : \"-0.0822526\", \"time\" : \"1430031000\", \"bucket\" : \"002\", \"amount\" : \"3.00\"}";
+    
+  //  NSString *body = [NSString stringWithFormat:@"id=%@&lat=%@&long=]
+    
+    [request setHTTPBody:[payload dataUsingEncoding:NSUTF8StringEncoding]];
+
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+    }];
+    
+    self.beaconManager = [[ESTBeaconManager alloc] init];
+    [self.beaconManager requestAlwaysAuthorization];
+    self.beaconManager.delegate = self;
+    
+    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"]
+                                                                major:10072
+                                                                minor:5050
+                                                           identifier:@"RegionIdentifier"];
+    
+    [self.beaconManager startRangingBeaconsInRegion:self.beaconRegion];
+
+
     return YES;
+}
+
+- (void)beaconManager:(id)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
+{
+    if (beacons.count > 0) {
+        
+        NSUUID *uuid = [[NSUUID  alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
+        
+        for (CLBeacon *beacon in beacons) {
+            
+            if ([self isUUID:beacon.proximityUUID equalToUUID:uuid]) {
+                if (!self.sentNotification) {
+                    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+                    
+                    NSDate *now = [NSDate date];
+                    NSDate *dateToFire = [now dateByAddingTimeInterval:1];
+                    
+                    localNotification.fireDate = dateToFire;
+                    localNotification.alertBody = @"Prince's Trust collectors near you!";
+                    localNotification.soundName = UILocalNotificationDefaultSoundName;
+                    localNotification.applicationIconBadgeNumber = 1; // increment
+                    
+                    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+                    self.sentNotification = YES;
+                }
+            }
+        }
+    }
+}
+
+-(BOOL)isUUID:(NSUUID*)uuid1 equalToUUID:(NSUUID*)uuid2
+{
+    return [uuid1 isEqual:uuid2];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
