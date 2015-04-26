@@ -1,3 +1,4 @@
 pod 'Braintree'
 pod 'Braintree/Apple-Pay'
 pod 'EstimoteSDK'
+pod 'SDWebImage', '~>3.7'

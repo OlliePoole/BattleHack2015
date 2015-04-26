@@ -15,10 +15,17 @@
 		6BBBC98D1AEB96DB002BFA34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC98C1AEB96DB002BFA34 /* Images.xcassets */; };
 		6BBBC9901AEB96DB002BFA34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BBBC98E1AEB96DB002BFA34 /* LaunchScreen.xib */; };
 		6BBBC99C1AEB96DB002BFA34 /* BattleHack2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBBC99B1AEB96DB002BFA34 /* BattleHack2015Tests.m */; };
+		A91CC8811AEC5F9900AFC0BB /* Donation.m in Sources */ = {isa = PBXBuildFile; fileRef = A91CC8801AEC5F9900AFC0BB /* Donation.m */; };
+		A91CC8841AEC5FAC00AFC0BB /* DonationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A91CC8831AEC5FAC00AFC0BB /* DonationTableViewCell.m */; };
+		A91CC8871AEC90D800AFC0BB /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A91CC8861AEC90D800AFC0BB /* UIImageEffects.m */; };
+		A91CC88C1AECB4A400AFC0BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91CC88B1AECB4A400AFC0BB /* QuartzCore.framework */; };
 		A94A33D81AEC192700B458FF /* BeaconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A33D71AEC192700B458FF /* BeaconsViewController.m */; };
 		A94A33DA1AEC198800B458FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A33D91AEC198800B458FF /* UIKit.framework */; };
 		A94A33DC1AEC199600B458FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A33DB1AEC199600B458FF /* CoreGraphics.framework */; };
 		A94A33DE1AEC19A000B458FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A33DD1AEC19A000B458FF /* Foundation.framework */; };
+		A94A33E11AEC2F6600B458FF /* JustGivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94A33E01AEC2F6600B458FF /* JustGivingViewController.m */; };
+		A965E36F1AEC3ED00087CB55 /* JustGivingNetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A965E36E1AEC3ED00087CB55 /* JustGivingNetworkInterface.m */; };
+		A965E3751AEC42F60087CB55 /* Charity.m in Sources */ = {isa = PBXBuildFile; fileRef = A965E3741AEC42F60087CB55 /* Charity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +55,25 @@
 		6BBBC9951AEB96DB002BFA34 /* BattleHack2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleHack2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBBC99A1AEB96DB002BFA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BBBC99B1AEB96DB002BFA34 /* BattleHack2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BattleHack2015Tests.m; sourceTree = "<group>"; };
+		A91CC87F1AEC5F9900AFC0BB /* Donation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Donation.h; sourceTree = "<group>"; };
+		A91CC8801AEC5F9900AFC0BB /* Donation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Donation.m; sourceTree = "<group>"; };
+		A91CC8821AEC5FAC00AFC0BB /* DonationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonationTableViewCell.h; sourceTree = "<group>"; };
+		A91CC8831AEC5FAC00AFC0BB /* DonationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonationTableViewCell.m; sourceTree = "<group>"; };
+		A91CC8851AEC90D800AFC0BB /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		A91CC8861AEC90D800AFC0BB /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		A91CC88B1AECB4A400AFC0BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A94A33D51AEBE35B00B458FF /* BattleHack2015.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BattleHack2015.entitlements; sourceTree = "<group>"; };
 		A94A33D61AEC192700B458FF /* BeaconsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsViewController.h; sourceTree = "<group>"; };
 		A94A33D71AEC192700B458FF /* BeaconsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsViewController.m; sourceTree = "<group>"; };
 		A94A33D91AEC198800B458FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A94A33DB1AEC199600B458FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A94A33DD1AEC19A000B458FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A94A33DF1AEC2F6600B458FF /* JustGivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustGivingViewController.h; sourceTree = "<group>"; };
+		A94A33E01AEC2F6600B458FF /* JustGivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustGivingViewController.m; sourceTree = "<group>"; };
+		A965E36D1AEC3ED00087CB55 /* JustGivingNetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustGivingNetworkInterface.h; sourceTree = "<group>"; };
+		A965E36E1AEC3ED00087CB55 /* JustGivingNetworkInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustGivingNetworkInterface.m; sourceTree = "<group>"; };
+		A965E3731AEC42F60087CB55 /* Charity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Charity.h; sourceTree = "<group>"; };
+		A965E3741AEC42F60087CB55 /* Charity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Charity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91CC88C1AECB4A400AFC0BB /* QuartzCore.framework in Frameworks */,
 				A94A33DE1AEC19A000B458FF /* Foundation.framework in Frameworks */,
 				A94A33DC1AEC199600B458FF /* CoreGraphics.framework in Frameworks */,
 				A94A33DA1AEC198800B458FF /* UIKit.framework in Frameworks */,
@@ -112,6 +133,18 @@
 				6BBBC97F1AEB96DB002BFA34 /* Supporting Files */,
 				A94A33D61AEC192700B458FF /* BeaconsViewController.h */,
 				A94A33D71AEC192700B458FF /* BeaconsViewController.m */,
+				A94A33DF1AEC2F6600B458FF /* JustGivingViewController.h */,
+				A94A33E01AEC2F6600B458FF /* JustGivingViewController.m */,
+				A965E36D1AEC3ED00087CB55 /* JustGivingNetworkInterface.h */,
+				A965E36E1AEC3ED00087CB55 /* JustGivingNetworkInterface.m */,
+				A965E3731AEC42F60087CB55 /* Charity.h */,
+				A965E3741AEC42F60087CB55 /* Charity.m */,
+				A91CC87F1AEC5F9900AFC0BB /* Donation.h */,
+				A91CC8801AEC5F9900AFC0BB /* Donation.m */,
+				A91CC8821AEC5FAC00AFC0BB /* DonationTableViewCell.h */,
+				A91CC8831AEC5FAC00AFC0BB /* DonationTableViewCell.m */,
+				A91CC8851AEC90D800AFC0BB /* UIImageEffects.h */,
+				A91CC8861AEC90D800AFC0BB /* UIImageEffects.m */,
 			);
 			path = BattleHack2015;
 			sourceTree = "<group>";
@@ -154,6 +187,7 @@
 		F05F46C71D26377C332B2465 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A91CC88B1AECB4A400AFC0BB /* QuartzCore.framework */,
 				A94A33DD1AEC19A000B458FF /* Foundation.framework */,
 				A94A33DB1AEC199600B458FF /* CoreGraphics.framework */,
 				A94A33D91AEC198800B458FF /* UIKit.framework */,
@@ -306,9 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A965E36F1AEC3ED00087CB55 /* JustGivingNetworkInterface.m in Sources */,
+				A91CC8811AEC5F9900AFC0BB /* Donation.m in Sources */,
 				A94A33D81AEC192700B458FF /* BeaconsViewController.m in Sources */,
 				6BBBC9881AEB96DB002BFA34 /* ViewController.m in Sources */,
+				A965E3751AEC42F60087CB55 /* Charity.m in Sources */,
 				6BBBC9851AEB96DB002BFA34 /* AppDelegate.m in Sources */,
+				A91CC8841AEC5FAC00AFC0BB /* DonationTableViewCell.m in Sources */,
+				A94A33E11AEC2F6600B458FF /* JustGivingViewController.m in Sources */,
+				A91CC8871AEC90D800AFC0BB /* UIImageEffects.m in Sources */,
 				6BBBC9821AEB96DB002BFA34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +484,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = BattleHack2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -462,7 +502,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = BattleHack2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

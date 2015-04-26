@@ -56,9 +56,6 @@
                                               [PKPaymentSummaryItem summaryItemWithLabel:@"COMPANY NAME" amount:[NSDecimalNumber decimalNumberWithString:@"1"]]
                                               ];
     }];
-
-    
-    
 }
 
 - (IBAction)beacons:(id)sender

@@ -73,10 +73,8 @@
                 if (!self.sentNotification) {
                     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
                     
-                    // current time plus 10 secs
                     NSDate *now = [NSDate date];
                     NSDate *dateToFire = [now dateByAddingTimeInterval:1];
-                    
                     
                     localNotification.fireDate = dateToFire;
                     localNotification.alertBody = @"Prince's trust collectors near you!";
